@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Literacy Assistant</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+}
+
+/* Navigation */
+nav{
+    background:#0066cc;
+    padding:15px;
+    position:sticky;
+    top:0;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav ul li{
+    margin:5px 15px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Hero Section */
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#0066cc,#00b4d8);
+    color:white;
+}
+
+.hero h1{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.btn{
+    background:white;
+    color:#0066cc;
+    padding:12px 25px;
+    border-radius:25px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Container */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+/* Cards */
+.card{
+    background:white;
+    margin:20px 0;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    color:#0066cc;
+    margin-bottom:15px;
+}
+
+/* Grid */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+/* Progress Chart */
+.progress{
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+    margin:10px 0;
+}
+
+.progress-bar{
+    height:25px;
+    text-align:center;
+    color:white;
+    line-height:25px;
+    font-weight:bold;
+}
+
+.upi{
+    width:87%;
+    background:#28a745;
+}
+
+.online{
+    width:90%;
+    background:#007bff;
+}
+
+.email{
+    width:85%;
+    background:#ff9800;
+}
+
+/* Buttons */
+.button{
+    display:inline-block;
+    margin-top:10px;
+    background:#0066cc;
+    color:white;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    background:#222;
+    color:white;
+    padding:20px;
+    margin-top:30px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+.hero h1{
+font-size:28px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#results">Results</a></li>
+<li><a href="#training">Training</a></li>
+<li><a href="#security">Security</a></li>
+</ul>
+</nav>
+
+<section class="hero" id="home">
+<h1>Digital Literacy Assistant</h1>
+<p>Empowering Communities Through Digital Education</p>
+<a href="#about" class="btn">Learn More</a>
+</section>
+
+<div class="container">
+
+<div class="card" id="about">
+<h2>About the Project</h2>
+<p>
+This project helps community members learn smartphone usage,
+digital payments, online services, and cyber security practices.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h2>Objectives</h2>
+<ul>
+<li>Improve Digital Literacy</li>
+<li>Promote Online Services</li>
+<li>Train Smartphone Users</li>
+<li>Increase UPI Usage</li>
+<li>Create Cyber Awareness</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Key Benefits</h2>
+<ul>
+<li>Independent Service Access</li>
+<li>Reduced Dependency</li>
+<li>Safer Online Transactions</li>
+<li>Better Employment Opportunities</li>
+<li>Improved Confidence</li>
+</ul>
+</div>
+
+</div>
+
+<div class="card" id="results">
+<h2>Training Results Dashboard</h2>
+
+<p>UPI Users Growth</p>
+<div class="progress">
+<div class="progress-bar upi">87%</div>
+</div>
+
+<p>Online Service Users Growth</p>
+<div class="progress">
+<div class="progress-bar online">90%</div>
+</div>
+
+<p>Email Users Growth</p>
+<div class="progress">
+<div class="progress-bar email">85%</div>
+</div>
+
+</div>
+
+<div class="card" id="training">
+<h2>Digital Payment Training</h2>
+<ol>
+<li>Install a UPI App</li>
+<li>Link Bank Account</li>
+<li>Create UPI PIN</li>
+<li>Scan QR Code</li>
+<li>Complete Secure Transactions</li>
+</ol>
+
+<a href="#" class="button">Start Learning</a>
+</div>
+
+<div class="card" id="security">
+<h2>Cyber Security Tips</h2>
+<ul>
+<li>Never Share OTP</li>
+<li>Use Strong Passwords</li>
+<li>Avoid Unknown Links</li>
+<li>Keep Applications Updated</li>
+<li>Verify Websites Before Login</li>
+</ul>
+
+<a href="#" class="button">View Safety Guide</a>
+</div>
+
+</div>
+
+<footer>
+<p>Digital Literacy Mini Project | Anantapur Community Service Project</p>
+</footer>
+
+</body>
+</html>
